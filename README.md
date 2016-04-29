@@ -1,4 +1,4 @@
-# internetday2016
+# Internetday 2016
 
 
 ## Pre-requisiti
@@ -72,9 +72,12 @@ port = 5061
 
 Monkeys! Il mio vicino mi disturba, aggingiamo un filtro sul numero del chiamante, nel diaplan extensions.conf aggiungo 
 
+```
 exten => 1003,1,NoOP(Numero chiamante ${CALLERID(num):3})
 same => n,GotoIf($[${CALLERID(num):3} == 3493824114]?monkeys)
 same => n,Dial(SIP/1001)
 same => n,Hangup()
 same => n(monkeys),Playback(tt-monkeys)
 same => n,Hangup()
+```
+
