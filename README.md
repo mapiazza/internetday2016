@@ -12,6 +12,17 @@
 
 ## Laboratorio
 
+Comandi per asterisk
+
+```
+asterisk -rvvvvv -> comando per entare in console
+sip reload --> per applicare cambiamenti al file sip.conf
+dialplan reload --> per applicare cambiamenti al file extensions.conf
+sip show peers --> per verificare lo stato dei device
+```
+
+
+
 Aggiungo due device alla configurazione del file /etc/asterisk/sip.conf
 
 ```
